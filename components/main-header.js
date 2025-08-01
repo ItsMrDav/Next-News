@@ -2,14 +2,17 @@ import Link from 'next/link';
 
 export default function MainHeader() {
   return (
-    <>
-      <ul>
-        <li>
-          <Link href="/">Main Page</Link>
-        </li>
-        <Link href="/news">News</Link>
-        <li></li>
-      </ul>
-    </>
+    <header id="main-header">
+      <div id="logo">
+        <Link href="/">NextNews</Link>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link href="/news">News</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
